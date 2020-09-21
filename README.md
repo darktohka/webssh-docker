@@ -23,3 +23,11 @@ OR, you can pull the Docker image from my repository on Docker Hub!
 ```
 docker pull darktohka/webssh-docker
 ```
+
+### Running the image
+
+You will need to expose one port in order to communicate with the WebSSH server.
+
+```
+docker run -d -p 8080:8080 darktohka/webssh-docker
+```
