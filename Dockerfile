@@ -14,7 +14,7 @@ WORKDIR /tmp
 RUN \
 # Install development tools
     apk add --no-cache libffi openssl \
-    && apk add --no-cache --virtual .dev-deps clang g++ libffi-dev openssl-dev make rust \
+    && apk add --no-cache --virtual .dev-deps clang g++ libffi-dev openssl-dev make cargo \
     && addgroup -S webssh \
     && adduser -S webssh -G webssh \
     && pip install -U --no-cache-dir webssh \
